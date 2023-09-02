@@ -2,6 +2,8 @@
 import HelloWorld from './components/Welcome.vue'
 import Button from "@/components/Button.vue";
 import TopEmployers from "@/components/TopEmployers.vue";
+import TopWorkers from "@/components/TopWorkers.vue";
+import Footer from "@/components/Footer.vue";
 
 </script>
 
@@ -9,20 +11,22 @@ import TopEmployers from "@/components/TopEmployers.vue";
   <body>
   <header>
     <img alt="Vue logo" class="logo" src="./assets/lp-man.png" width="454" height="904"/>
-
     <div class="wrapper">
       <HelloWorld msg="ChambeaPe" />
       <Button />
-
     </div>
   </header>
   <main>
     <div class="top-employers">
       <TopEmployers/>
     </div>
+    <br>
+    <div class="top-workers">
+      <TopWorkers/>
+    </div>
   </main>
   <footer>
-
+    <Footer />
   </footer>
   </body>
 
@@ -31,7 +35,6 @@ import TopEmployers from "@/components/TopEmployers.vue";
 <style scoped>
 
 body{
-
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-text);
@@ -41,13 +44,16 @@ body{
   flex-direction: column;
 }
 
+footer{
+  display: flex;
+  width: 100%;
+}
+
 @media (min-width: 1024px) {
   header {
     display: flex;
     place-items: center;
   }
-
-
   header .wrapper {
     display: flex;
     place-items: flex-start;
@@ -69,3 +75,4 @@ body{
   }
 }
 </style>
+
