@@ -1,10 +1,12 @@
 <script setup>
 import HelloWorld from './components/Welcome.vue'
 import Button from "@/components/Button.vue";
+import TopEmployers from "@/components/TopEmployers.vue";
 
 </script>
 
 <template>
+  <body>
   <header>
     <img alt="Vue logo" class="logo" src="./assets/lp-man.png" width="454" height="904"/>
 
@@ -15,44 +17,47 @@ import Button from "@/components/Button.vue";
     </div>
   </header>
   <main>
-
+    <div class="top-employers">
+      <TopEmployers/>
+    </div>
   </main>
+  <footer>
+
+  </footer>
+  </body>
+
 </template>
 
 <style scoped>
 
 body{
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 16px;
   line-height: 1.5;
   color: var(--color-text);
   margin: 0;
   padding: 0;
-}
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 1024px) {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
 
   header .wrapper {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
   }
   .wrapper{
     width: 50vw;
