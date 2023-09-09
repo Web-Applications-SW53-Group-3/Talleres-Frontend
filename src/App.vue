@@ -4,7 +4,8 @@ import Button from "@/components/Button.vue";
 import TopEmployers from "@/components/TopEmployers.vue";
 import TopWorkers from "@/components/TopWorkers.vue";
 import Footer from "@/components/Footer.vue";
-import Contactus from "../../../../../../../Downloads/Talleres-Frontend/Of-Talleres-Frontend/src/ContactUs.vue";
+import Contactus from "@/components/ContactUs.vue";
+import Publicity from "@/components/Publicity.vue";
 
 </script>
 
@@ -28,7 +29,7 @@ import Contactus from "../../../../../../../Downloads/Talleres-Frontend/Of-Talle
     <div class="contact-register">
       <h2 class="title-contact">Contact Us</h2>
       <Contactus/>
-
+      <Publicity/>
     </div>
 
   </main>

@@ -31,8 +31,7 @@
 export default {
   props: {
     title: String
-  },
-  name: "tutorial"
+  }
 }
 </script>
 

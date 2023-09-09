@@ -24,6 +24,7 @@ const i18n =  createI18n({
             'Send':'Enviar',
             'PhoneNumber':'Teléfono',
             'Terms':'Acepta Términos y condiciones',
+            'InvalidEmail': 'Email inválido',
         },
         en:{
             'TextPublicy':'This is a space to receive publicity',
@@ -37,6 +38,7 @@ const i18n =  createI18n({
             'Send':'Send    ',
             'PhoneNumber':'Phone Number',
             'Terms':'Accept Terms and Conditions',
+            'InvalidEmail': 'Invalid email'
         },
         pt:{
             'TextPublicy':'Este é um espaço para receber publicidade',
@@ -52,6 +54,7 @@ const i18n =  createI18n({
             'PlacePhoneNumber': 'Digite seu telefone',
             'PhoneNumber':'Telefone',
             'Terms':'Aceitar termos e condições',
+            'InvalidEmail': 'Email inválido'
         }
     }
 })
