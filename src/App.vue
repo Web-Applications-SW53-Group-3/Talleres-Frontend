@@ -1,9 +1,10 @@
 <script setup>
-import HelloWorld from './components/Welcome.vue'
+import Title from './components/Welcome.vue'
 import Button from "@/components/Button.vue";
 import TopEmployers from "@/components/TopEmployers.vue";
 import TopWorkers from "@/components/TopWorkers.vue";
 import Footer from "@/components/Footer.vue";
+import Contactus from "../../../../../../../Downloads/Talleres-Frontend/Of-Talleres-Frontend/src/ContactUs.vue";
 
 </script>
 
@@ -12,7 +13,7 @@ import Footer from "@/components/Footer.vue";
   <header>
     <img alt="Vue logo" class="logo" src="./assets/lp-man.png" width="454" height="904"/>
     <div class="wrapper">
-      <HelloWorld msg="ChambeaPe" />
+      <Title msg="ChambeaPe" />
       <Button />
     </div>
   </header>
@@ -24,6 +25,12 @@ import Footer from "@/components/Footer.vue";
     <div class="top-workers">
       <TopWorkers/>
     </div>
+    <div class="contact-register">
+      <h2 class="title-contact">Contact Us</h2>
+      <Contactus/>
+
+    </div>
+
   </main>
   <footer>
     <Footer />
@@ -47,6 +54,14 @@ body{
 footer{
   display: flex;
   width: 100%;
+}
+.title-contact{
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 2rem;
 }
 
 @media (min-width: 1024px) {
@@ -73,6 +88,14 @@ footer{
   .wrapper Button{
     margin-top: 35px;
   }
+  .contact-register{
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+  }
+
 }
 </style>
 
