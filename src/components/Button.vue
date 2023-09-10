@@ -1,15 +1,9 @@
 <template>
-  <button class="custom-button">Únete a la Experiencia</button>
+  <pv-button class="custom-button" >Únete a la Experiencia</pv-button>
 </template>
 
 <style scoped>
 .custom-button {
-  background-color: #F1364C;
-  color: white;
-  width: 200px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 </style>
