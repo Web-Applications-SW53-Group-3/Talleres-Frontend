@@ -2,13 +2,13 @@
 
   <div class="form-data">
 
-    <label for="email">{{ $t('Email')}}:</label>
-    <input-text type="email" v-model="email" id="name" :placeholder="$t('PlaceEmail')" />
+    <label for="email" :aria-label="$t('Email')" >{{ $t('Email')}}:</label >
+    <input-text type="email" v-model="email" id="email" :placeholder="$t('PlaceEmail')" />
 
     <br>
     <div class="conditions">
       <label for="email">{{ $t('Terms')}}:</label>
-      <input type="checkbox">
+      <checkbox v-model="checked" :binary="true" />
     </div>
     <br>
 
@@ -25,7 +25,8 @@ export default {
   },
   data() {
     return {
-      email: ""
+      email: "",
+      checked:""
     }
   },
   name: "email",

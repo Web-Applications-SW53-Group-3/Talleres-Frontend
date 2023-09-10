@@ -2,23 +2,22 @@
 
   <div class="form-data">
 
-    <label for="name">{{ $t('Name')}}:</label>
-    <input-text id="name" :placeholder="$t('PlaceName')" />
+    <label for="name"  :aria-label="$t('Name')">Tu nombre:</label>
+    <input-text id="name" :placeholder="$t('PlaceName')" :aria-label="$t('PlaceName')"/>
     <br>
 
-    <label for="email">{{ $t('Email')}}:</label>
-    <input-text type="email" id="name" :placeholder="$t('PlaceEmail')" />
-
-    <br>
-
-    <label for="phone">{{ $t('PhoneNumber')}}:</label>
-    <input-text type="email" id="name" :placeholder="$t('PlacePhoneNumber')" />
+    <label for="email" :aria-label="$t('Email')">{{ $t('Email')}}:</label>
+    <input-text type="email" id="email" :placeholder="$t('PlaceEmail')" :aria-label="$t('PlaceEmail')"/>
 
     <br>
 
-    <label for="message">{{ $t('Message')}}:</label>
+    <label for="phone" :aria-label="$t('PhoneNumber')">{{ $t('PhoneNumber')}}:</label>
+    <input-text type="email" id="phone" :placeholder="$t('PlacePhoneNumber')" :aria-label="$t('PlacePhoneNumber')" />
 
-    <text-area> HOla</text-area>
+    <br>
+
+    <label for="message" :aria-label="$t('Message')">Tu mensaje:</label>
+    <textarea id="message" :placeholder="$t('Message')" :aria-label="$t('Message')"></textarea>
     <br>
     <pv-button class="submit" >{{ $t('Send')}}</pv-button>
 

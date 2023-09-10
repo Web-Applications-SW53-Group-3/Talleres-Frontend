@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <label class="name"> {{ $t('TextPublicy')}} {{name}} </label>
+    <label class="name" :aria-label="$t('TextPublicy')"> {{ $t('TextPublicy')}} {{name}} </label>
     <label>{{content}}</label>
 
     <email />

@@ -9,6 +9,7 @@ import InputText from 'primevue/inputtext';
 import 'primeicons/primeicons.css';
 import Button from "primevue/button";
 import Textarea from "primevue/textarea";
+import Checkbox from 'primevue/checkbox';
 const i18n =  createI18n({
     locale:'pt',
     messages:{
@@ -64,4 +65,6 @@ app.use(PrimeVue);
 app.component('pv-button', Button );
 app.component('input-text', InputText);
 app.component('text-area', Textarea);
+app.component('checkbox', Checkbox);
+
 app.mount('#app');
